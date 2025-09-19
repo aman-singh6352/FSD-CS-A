@@ -10,15 +10,27 @@
         }
     </style>
 </head>
-<body>
-    <div id="adi">
+<body id="adi">
+    <button onclick="red()">RED</button>
+    <button onclick="green()">GREEN</button>
+    <button onclick="blue()">BLUE</button>
+    <!-- <div id="adi">
         <button onclick="abes()">Click</button>
         <p id="aaa"></p>
-    </div>
+    </div> -->
     <script>
         function abes(){
             let para = document.getElementById('aaa');
             para.innerText="Hello World";
+        }
+        function red(){
+            document.getElementById('adi').style.backgroundColor = "red";
+        }
+        function blue(){
+            document.getElementById('adi').style.backgroundColor = "blue";
+        }
+        function green(){
+            document.getElementById('adi').style.backgroundColor = "green";
         }
     </script>
 </body>
